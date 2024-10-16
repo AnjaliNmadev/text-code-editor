@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="text-code-editor">
+     <div class="html-editor txt-editor ">
+         <div class="head-editor">
+   <div class="left-head-editor">
+    <img src="images/html.png" width="30px">
+    <span>
+       HTML 
+    </span>
+    
+  </div>
+   <div class="right-head-editor">
+    <i class="fa-solid fa-copy copy1 copy"></i>
+   </div>
+           
+           
+         </div>
+       
+            <textarea  class="input-html" spellcheck="false" data-gramm="false">
+
+            </textarea>
+     </div>
+     <div class="css-editor  txt-editor">
+<div class="head-editor">
+<div class="left-head-editor">
+    <img src="images/css.png"   width="30px">
+    <span>
+        CSS
+    </span>
+</div>
+<div class="right-head-editor">
+    <i class="fa-solid fa-copy copy2  copy" ></i>
+</div>
+    
+</div>
+
+    <textarea  class="input-css" spellcheck="false" data-gramm="false">
+
+    </textarea>
+
+     </div>
+     <div class="js-editor txt-editor ">
+<div class="head-editor">
+
+    <div class="left-head-editor">
+        <img src="images/js.png" width="40px" >
+
+        <span>  JS  </span>
+       
+         
+    </div>
+    <div class="right-head-editor">
+        <i class="fa-solid fa-copy copy3  copy"></i>
+    </div>
+    
+    
+</div>
+    <textarea  class="input-js" spellcheck="false" data-gramm="false">
+
+    </textarea>
+     </div>
+
+    </div>
+
+     <div class="output-box">
+        <div class="output-head">
+            <h5 class="out">
+                Output
+            </h5>
+            <i class="fa-solid fa-floppy-disk out   save" ></i>
+            <i class="fa-solid fa-caret-up  out  bigger"></i>
+        </div>
+
+        <iframe id="result"></iframe>
+     </div>
+   <script src="script.js"></script>
+</body>
+</html>

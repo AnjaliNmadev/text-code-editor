@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+   
+   
+}
+.text-code-editor{
+    width: 100%;
+    height: 70%;
+    background-color: rgb(61, 59, 59);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 30px;
+   
+    position: relative;
+  
+}
+.txt-editor{
+    width: 450px;
+    height: 350px;
+    border: 2px solid #525050;
+    gap: 20px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 4px 4px 10px #131212;
+  
+    overflow: auto;
+   
+}
+.head-editor{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #d1c9c9;
+    background-color: rgb(61, 59, 59);
+    box-shadow: 2px 4px 10px #131212;
+    border-radius: 0 0 40px 40px;
+    gap: 10px;
+  
+}
+.right-head-editor{
+    color: #c0bbbb;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+   
+}
+.left-head-editor{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 15px;
+}
+.right-head-editor i{
+    transition: all 0.5;
+}
+   
+
+.right-head-editor i:hover{
+scale: 120%;
+}
+
+textarea {
+    width: 100%;
+    height: calc(100% - 80px);
+    resize: none;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(61, 59, 59);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #c0bbbb;
+    padding: 10px;
+   
+}
+.output-box{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(233, 233, 233);
+    box-shadow:  2px -2px 10px #9dcadbb2;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    color: #464545;
+    transition: all 0.5;
+
+}
+.output-head{
+    width: 100%;
+    height: 60px;
+   position: absolute;
+    background-color: rgb(61, 59, 59);
+   display: flex;
+   align-items: center;
+   justify-content: right;
+   gap: 40px;
+ padding: 30px;
+ color: #d1c9c9;
+ font-size: 20px;
+ cursor: pointer;
+
+  
+}
+.output-head .out:hover{
+    scale: 120%;
+}
+#result
+{
+    width: 100%;
+    height:calc(100% - 60px);
+   
+    margin-top: 60px;
+  
+    
+}
+.input-html::selection{
+
+    background-color: red;
+    color: #fffdfd;
+    font-weight: 600;
+}
+.input-css::selection{
+
+    background-color: rgb(1, 127, 177);
+    color: #fff6f6;
+    font-weight: 600;
+
+}
+.input-js::selection{
+
+    background-color: rgb(248, 227, 131);
+    color: #535353;
+    font-weight: 600;
+}
+
+.output-full-screen{
+    height: 100%;
+}
+.bigger{
+    transition: all 1s;
+}
+
+@media only screen and  (max-width :760px){
+    .txt-editor{
+        width: 500px;
+        height: 340px;
+    }
+    
+}
+@media (max-width :600px){
+    .text-code-editor{
+        width: 100%;
+        height: 83%;
+        background-color: rgb(61, 59, 59);
+        display: flex;
+      flex-direction: column;
+        position: relative;
+       
+    }
+    .txt-editor{
+        width: 90%;
+        height: 1100px;
+    }
+    .html-editor{
+        width: 90%;
+        height: 1100px; 
+    }
+    .css-editor{
+        width: 90%;
+        height: 1100px; 
+    }
+    .js-editor{
+        width: 90%;
+        height: 1100px; 
+    }
+    .output-box{
+        width: 100%;
+        height: 19%;
+        
+    
+    }
+    .output-head{
+        width: 100%;
+        height: 40px;
+       position: absolute;
+       
+      
+    }
+    #result
+{
+    width: 100%;
+    height:calc(100% - 40px);
+   
+    margin-top: 60px;
+  
+    
+}
+}
+
+
+
+
+
